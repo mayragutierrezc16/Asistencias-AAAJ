@@ -1,0 +1,294 @@
+body.inicio {
+    margin: 0;
+    padding: 0;
+    background-color: #b30000; /* rojo fuerte */
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin-top: 250px;
+}
+
+.escudo {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    background-color: white;
+    color: #b30000;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #800000;
+    color: white;
+}
+
+/* Media queries para mejorar en pantallas chicas */
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .escudo {
+        width: 70%;
+    }
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #b30000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .escudo-logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-left: 20px; /* Para no pegarse al logo */
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #b30000; /* Letra roja */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 25px; /* Botones más grandes */
+    border-radius: 5px;
+    background-color: white; /* Fondo blanco */
+    transition: background-color 0.3s, color 0.3s;
+    flex-grow: 1; /* Para que los botones ocupen todo el ancho */
+    text-align: center; /* Centrar el texto */
+}
+
+.nav-links a:hover {
+    background-color: #800000; /* Fondo rojo */
+    color: white; /* Letra blanca al hacer hover */
+}
+
+/* Espacio debajo del navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 100px; /* Aseguramos que el contenido no quede oculto debajo del nav */
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilos generales para los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 890px; /* Ancho máximo del formulario */
+}
+
+form button {
+    background-color: #b30000; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}	
+
+form button:hover {
+    background-color: #fff; /* Color de fondo rojo más oscuro al pasar el mouse */
+    color: #b30000; /* Color de texto rojo más oscuro al pasar el mouse */
+    border: 0.5px solid #b30000; /* Borde rojo al pasar el mouse */
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+input, select {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    form input,
+    form select,
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form input,
+    form select,
+    button {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+/* Contenedor de las páginas para Descargar Asistencias */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #b30000;
+    margin-bottom: 20px;
+}
+
+.container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.download-button {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #b30000;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #800000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    .download-button {
+        max-width: 180px;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 1.4rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .download-button {
+        max-width: 150px;
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}

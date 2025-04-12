@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listado de Alumnos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="escudo.png" alt="Escudo del Club" class="escudo-logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="alumnos.html">Ver listado de alumnos</a></li>
+      <li><a href="descargar_asistencias.html">Descargar listado de asistencias</a></li>
+      <li><a href="agregar_alumno.html">Agregar nuevo alumno</a></li>
+      <li><a href="tomar_asistencia.html">Tomar asistencia</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal de la página -->
+  <div class="container">
+    <h1>Listado de Alumnos</h1>
+    <div id="alumnos-container">
+      <!-- Los datos de los alumnos se cargarán aquí -->
+    </div>
+    <!-- Botón para descargar el listado -->
+    <a href="descargar_asistencias.php" class="btn descargar">Descargar listado de alumnos</a>
+  </div>
+
+  <script src="js/alumnos.js"></script>
+</body>
+</html>
